@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+<!-- Layout Angular -->
+<!-- Layout -->
+	<definition name="test.layout.angular" template="/WEB-INF/jsp/template/layout.jsp">
+		<put-attribute name="header" value="test.layout.header" cascade="true"></put-attribute>
+		<put-attribute name="body" value="angular.layout.body" cascade="true"></put-attribute>
+	</definition>
+	
+	<!-- Body -->
+	<definition name="angular.layout.body" template="/WEB-INF/jsp/template/angular/body.jsp">
+		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute>
+		<put-attribute name="orientationTop" value="" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.innerMiddle" cascade="true"></put-attribute>
+		<put-attribute name="footer" value="test.layout.footer" ></put-attribute>
+		<put-attribute name="script" value="/WEB-INF/jsp/template/angular/script.jsp" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Layout Default init -->
+<!-- Layout -->
+	<definition name="test.layout" template="/WEB-INF/jsp/template/layout.jsp">
+		<put-attribute name="header" value="test.layout.header" cascade="true"></put-attribute>
+		<put-attribute name="body" value="test.layout.body" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Header -->
+	<definition name="test.layout.header" template="/WEB-INF/jsp/template/header.jsp">
+		<put-attribute name="metatag" value="test.layout.header.metatag"></put-attribute>
+		<put-attribute name="style" value="test.layout.header.style" cascade="true"></put-attribute>
+	</definition>
+
+<!-- MetaTag -->
+	<definition name="test.layout.header.metatag" template="/WEB-INF/jsp/template/metatag.jsp">
+	</definition>	
+
+<!-- Style -->	
+	<definition name="test.layout.header.style" template="/WEB-INF/jsp/template/style.jsp">
+	</definition>	
+
+<!-- Menu -->
+	<definition name="test.layout.body.menu" template="/WEB-INF/jsp/template/menu.jsp">
+	</definition>	
+
+<!-- Orientation Top -->
+	<definition name="test.layout.body.orientationTop" template="/WEB-INF/jsp/template/orientationTop.jsp">
+	</definition>
+
+<!-- innerMiddle -->
+	<definition name="test.layout.body.innerMiddle" template="/WEB-INF/jsp/template/innerMiddle.jsp">
+	</definition>	
+
+<!-- Footer -->
+	<definition name="test.layout.footer" template="/WEB-INF/jsp/template/footer.jsp">
+	</definition>	
+
+<!-- Script -->
+	<definition name="test.layout.body.script" template="/WEB-INF/jsp/template/script.jsp">
+	</definition>	
+	
+<!-- Body -->
+	<definition name="test.layout.body" template="/WEB-INF/jsp/template/body.jsp">
+		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute>
+		<put-attribute name="orientationTop" value="" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.innerMiddle" cascade="true"></put-attribute>
+		<put-attribute name="footer" value="test.layout.footer" ></put-attribute>
+		<put-attribute name="script" value="/WEB-INF/jsp/template/script.jsp" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Layout Default end -->
+
+<!-- Layout Fly Search init -->
+
+<!-- Layout List-->
+	<definition name="test.layout.fly.list.search.result" extends="test.layout" >
+		<put-attribute name="style" value="test.layout.header.style.fly.list" cascade="true"></put-attribute>
+		<put-attribute name="orientationTop" value="test.layout.body.orientationTop" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.fly.list.result" cascade="true"></put-attribute>
+		<put-attribute name="script" value="test.layout.header.script.fly.list" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Middle List-->
+
+	<definition name="test.layout.body.fly.list.result" template="/WEB-INF/jsp/template/flySearchResult/bodyList.jsp">
+		<put-attribute name="filterTop" value="/WEB-INF/jsp/template/flySearchResult/filterTop.jsp"></put-attribute>
+		<put-attribute name="filterLeft" value="/WEB-INF/jsp/template/flySearchResult/filterLeft.jsp"></put-attribute>
+	</definition>
+	
+<!-- Style List-->	
+
+	<definition name="test.layout.header.style.fly.list" template="/WEB-INF/jsp/template/flySearchResult/styleList.jsp">
+	</definition>
+	
+<!-- Script List-->
+
+	<definition name="test.layout.header.script.fly.list" template="/WEB-INF/jsp/template/flySearchResult/scriptList.jsp">
+	</definition>
+	
+<!-- Layout Grid-->
+	<definition name="test.layout.fly.grid.search.result" extends="test.layout" >
+		<put-attribute name="style" value="test.layout.header.style.fly.grid" cascade="true"></put-attribute>
+		<put-attribute name="orientationTop" value="test.layout.body.orientationTop" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.fly.grid.result" cascade="true"></put-attribute>
+		<put-attribute name="script" value="test.layout.header.script.fly.grid" cascade="true"></put-attribute>
+	</definition>
+	
+<!-- Middle Grid-->
+
+	<definition name="test.layout.body.fly.grid.result" template="/WEB-INF/jsp/template/flySearchResult/bodyGrid.jsp">
+		<put-attribute name="filterTop" value="/WEB-INF/jsp/template/flySearchResult/filterTop.jsp"></put-attribute>
+		<put-attribute name="filterLeft" value="/WEB-INF/jsp/template/flySearchResult/filterLeft.jsp"></put-attribute>
+	</definition>
+	
+<!-- Style Grid-->	
+
+	<definition name="test.layout.header.style.fly.grid" template="/WEB-INF/jsp/template/flySearchResult/styleGrid.jsp">
+	</definition>
+	
+<!-- Script Grid-->
+
+	<definition name="test.layout.header.script.fly.grid" template="/WEB-INF/jsp/template/flySearchResult/scriptGrid.jsp">
+	</definition>		
+		
+	
+<!-- 	<definition name="test.layout.body.fly.grid.search.result" template="/WEB-INF/jsp/template/flySearchResult/bodyGrid.jsp"> -->
+<!-- 		<put-attribute name="filterTop" value="/WEB-INF/jsp/template/flySearchResult/filterTop.jsp"></put-attribute> -->
+<!-- 		<put-attribute name="filterLeft" value="/WEB-INF/jsp/template/flySearchResult/filterLeft.jsp"></put-attribute> -->
+<!-- 	</definition> -->
+<!-- 	<definition name="test.layout.fly.list.search.result" template="/WEB-INF/jsp/template/flySearchResult/layout.jsp"> -->
+<!-- 		<put-attribute name="header" value="test.layout.header.fly.list.search.result"></put-attribute> -->
+<!-- 		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="test.layout.body.fly.list.search.result"></put-attribute> -->
+<!-- 		<put-attribute name="footer" value="test.layout.footer"></put-attribute> -->
+<!-- 		<put-attribute name="script" value="/WEB-INF/jsp/template/flySearchResult/scriptList.jsp"></put-attribute>		 -->
+<!-- 	</definition> -->
+<!-- 	<definition name="test.layout.fly.grid.search.result" template="/WEB-INF/jsp/template/flySearchResult/layout.jsp"> -->
+<!-- 		<put-attribute name="header" value="test.layout.header.fly.grid.search.result"></put-attribute> -->
+<!-- 		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute> -->
+<!-- 		<put-attribute name="body" value="test.layout.body.fly.grid.search.result"></put-attribute> -->
+<!-- 		<put-attribute name="footer" value="test.layout.footer"></put-attribute> -->
+<!-- 		<put-attribute name="script" value="/WEB-INF/jsp/template/flySearchResult/scriptGrid.jsp"></put-attribute>		 -->
+<!-- 	</definition> -->
+<!-- 	<definition name="test.layout.header.fly.list.search.result" template="/WEB-INF/jsp/template/header.jsp"> -->
+<!-- 		<put-attribute name="metatag" value="/WEB-INF/jsp/template/flySearchResult/metatag.jsp"></put-attribute> -->
+<!-- 		<put-attribute name="style" value="/WEB-INF/jsp/template/flySearchResult/styleList.jsp"></put-attribute> -->
+<!-- 	</definition> -->
+<!-- 	<definition name="test.layout.header.fly.grid.search.result" template="/WEB-INF/jsp/template/header.jsp"> -->
+<!-- 		<put-attribute name="metatag" value="/WEB-INF/jsp/template/flySearchResult/metatag.jsp"></put-attribute> -->
+<!-- 		<put-attribute name="style" value="/WEB-INF/jsp/template/flySearchResult/styleGrid.jsp"></put-attribute> -->
+<!-- 	</definition> -->
+	
+</tiles-definitions>

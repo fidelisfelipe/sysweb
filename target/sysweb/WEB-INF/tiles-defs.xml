@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+<!-- Layout Upload init-->
+	<definition name="test.layout.angular.upload" template="/WEB-INF/jsp/template/layout.jsp">
+		<put-attribute name="header" value="test.layout.header.upload" cascade="true"></put-attribute>
+		<put-attribute name="body" value="angular.layout.body.upload" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Body -->
+	<definition name="angular.layout.body.upload" template="/WEB-INF/jsp/template/upload/body.jsp">
+		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute>
+		<put-attribute name="orientationTop" value="" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.innerMiddle.upload" cascade="true"></put-attribute>
+		<put-attribute name="footer" value="test.layout.footer" ></put-attribute>
+		<put-attribute name="script" value="/WEB-INF/jsp/template/upload/script.jsp" cascade="true"></put-attribute>
+	</definition>
+	
+	<!-- Header -->
+	<definition name="test.layout.header.upload" template="/WEB-INF/jsp/template/header.jsp">
+		<put-attribute name="metatag" value="test.layout.header.metatag"></put-attribute>
+		<put-attribute name="style" value="test.layout.header.style.upload" cascade="true"></put-attribute>
+	</definition>
+	
+	<!-- Style -->	
+	<definition name="test.layout.header.style.upload" template="/WEB-INF/jsp/template/upload/style.jsp">
+	</definition>
+	
+	<!-- innerMiddle -->
+	<definition name="test.layout.body.innerMiddle.upload" template="/WEB-INF/jsp/template/upload/innerMiddle.jsp">
+		<put-attribute name="form" value="test.layout.form.upload" cascade="true"></put-attribute>
+	</definition>
+	
+	<!-- form -->
+	<definition name="test.layout.form.upload" template="/WEB-INF/jsp/template/upload/form.jsp">
+	</definition>
+
+<!-- Layout Upload end-->
+
+
+<!-- Layout Angular -->
+<!-- Layout -->
+	<definition name="test.layout.angular" template="/WEB-INF/jsp/template/layout.jsp">
+		<put-attribute name="header" value="test.layout.header" cascade="true"></put-attribute>
+		<put-attribute name="body" value="angular.layout.body" cascade="true"></put-attribute>
+	</definition>
+	
+	<!-- Body -->
+	<definition name="angular.layout.body" template="/WEB-INF/jsp/template/angular/body.jsp">
+		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute>
+		<put-attribute name="orientationTop" value="" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.innerMiddle" cascade="true"></put-attribute>
+		<put-attribute name="footer" value="test.layout.footer" ></put-attribute>
+		<put-attribute name="script" value="/WEB-INF/jsp/template/angular/script.jsp" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Layout Default init -->
+<!-- Layout -->
+	<definition name="test.layout" template="/WEB-INF/jsp/template/layout.jsp">
+		<put-attribute name="header" value="test.layout.header" cascade="true"></put-attribute>
+		<put-attribute name="body" value="test.layout.body" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Header -->
+	<definition name="test.layout.header" template="/WEB-INF/jsp/template/header.jsp">
+		<put-attribute name="metatag" value="test.layout.header.metatag"></put-attribute>
+		<put-attribute name="style" value="test.layout.header.style" cascade="true"></put-attribute>
+	</definition>
+
+<!-- MetaTag -->
+	<definition name="test.layout.header.metatag" template="/WEB-INF/jsp/template/metatag.jsp">
+	</definition>	
+
+<!-- Style -->	
+	<definition name="test.layout.header.style" template="/WEB-INF/jsp/template/style.jsp">
+	</definition>	
+
+<!-- Menu -->
+	<definition name="test.layout.body.menu" template="/WEB-INF/jsp/template/menu.jsp">
+	</definition>	
+
+<!-- Orientation Top -->
+	<definition name="test.layout.body.orientationTop" template="/WEB-INF/jsp/template/orientationTop.jsp">
+	</definition>
+
+<!-- innerMiddle -->
+	<definition name="test.layout.body.innerMiddle" template="/WEB-INF/jsp/template/innerMiddle.jsp">
+	</definition>	
+
+<!-- Footer -->
+	<definition name="test.layout.footer" template="/WEB-INF/jsp/template/footer.jsp">
+	</definition>	
+
+<!-- Script -->
+	<definition name="test.layout.body.script" template="/WEB-INF/jsp/template/script.jsp">
+	</definition>	
+	
+<!-- Body -->
+	<definition name="test.layout.body" template="/WEB-INF/jsp/template/body.jsp">
+		<put-attribute name="menu" value="/WEB-INF/jsp/template/menu.jsp"></put-attribute>
+		<put-attribute name="orientationTop" value="" cascade="true"></put-attribute>
+		<put-attribute name="innerMiddle" value="test.layout.body.innerMiddle" cascade="true"></put-attribute>
+		<put-attribute name="footer" value="test.layout.footer" ></put-attribute>
+		<put-attribute name="script" value="/WEB-INF/jsp/template/script.jsp" cascade="true"></put-attribute>
+	</definition>
+
+<!-- Layout Default end -->
+</tiles-definitions>
