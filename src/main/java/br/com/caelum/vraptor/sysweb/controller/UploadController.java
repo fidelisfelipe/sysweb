@@ -81,7 +81,7 @@ public class UploadController {
 		result.include("contexto", ControllerUtil.getContexto(this.getClass()));
 		result.include("tipoArquivoString","*.pdf;*.doc;*.docx;*.zip;*.rar;");
 		result.include("uploadLimit",5);
-		result.include("tamanho",201024);
+		result.include("tamanho",2785702);
 	}
 
 	@Post 

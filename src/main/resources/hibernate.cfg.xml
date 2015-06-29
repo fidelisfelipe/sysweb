@@ -4,7 +4,7 @@
 	<session-factory>
 
 		<!-- acesso local -->
-		<property name="hibernate.connection.url">jdbc3:postgresql://localhost/travel</property>
+		<property name="hibernate.connection.url">jdbc3:postgresql://localhost/sysweb</property>
 		<property name="hibernate.connection.username">postgres</property>
 		<property name="hibernate.connection.password">postgres</property>
 
