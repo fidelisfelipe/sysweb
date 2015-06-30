@@ -8,6 +8,7 @@ import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.inject.Inject;
 import javax.servlet.ServletContext;
 
 import org.apache.commons.io.IOUtils;
@@ -30,10 +31,11 @@ public class UploadUtil {
 	private final ServletContext context;
 	private final DateUtil dateUtil;
 	
-	public UploadUtil() {
+	protected UploadUtil() {
 		this(null, null);
 	}
 	
+	@Inject
 	public UploadUtil(ServletContext context, DateUtil dateUtil){
 		this.context = context;
 		this.dateUtil = dateUtil;
