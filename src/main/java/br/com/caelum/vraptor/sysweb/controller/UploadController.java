@@ -98,11 +98,9 @@ public class UploadController {
 
 			result.use(Results.json()).from(arquivos).serialize();
 
-			Arquivo objetoComAnexo = logic.atualizaObjetoComAnexo(arquivo,
-					anexo);
+			logic.atualizaObjetoComAnexo(arquivo, anexo);
 
 			result.include("msg", MsgNegocio.ARQUIVO_ENVIADO);
-			result.redirectTo(this).upload(objetoComAnexo.getId().intValue());
 
 		}else{
 			logger.error("Nenhum arquivo foi enviado!");
