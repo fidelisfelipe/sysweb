@@ -13,5 +13,7 @@ public class MsgNegocio {
 	public static final String FALHA_NO_LOGON = "Falha ao realizar o logon, verifique suas credenciais e tente novamente.";
 	public static final String ARQUIVO_ENVIADO = "Arquivo Enviado com sucesso!";
 	public static final String INFORME_O_CAMPO_OBRIGATORIO = "Informe os campos obrigatórios!";
+	public static final String ARQUIVO_NAO_PODE_SER_ENVIADO = "Arquivo não pode ser enviado!";
+	public static final String ARQUIVO_NAO_PODE_SER_SALVO = "Arquivo não pode ser salvo";
 	
 }
