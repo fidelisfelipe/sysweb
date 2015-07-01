@@ -10,7 +10,7 @@
 		<div ng-controller="logo-footer-ctrl" class="bottom">
 			<div class="container">
 				<div class="logo pull-left">
-					<a href="{{href}}" title="{{name}}"> <img src="{{path}}" alt="{{title}}" />
+					<a href="{{href}}" title="{{name}}"> <img ng-src="{{path}}" alt="{{title}}" />
 					</a>
 				</div>
 				<div class="pull-right">

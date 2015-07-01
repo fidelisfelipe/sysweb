@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="D:\projetos\sysweb/pom-dist.xml" todir="D:\projetos\sysweb\target"/>
-  <replace file="D:\projetos\sysweb\target/pom-dist.xml" value="4.2.0-RC2-SNAPSHOT" token="VRAPTOR_VERSION_HERE"/>
+  <copy file="D:\repositorios\sysweb/pom-dist.xml" todir="D:\repositorios\sysweb\target"/>
+  <replace file="D:\repositorios\sysweb\target/pom-dist.xml" value="4.2.0-RC2-SNAPSHOT" token="VRAPTOR_VERSION_HERE"/>
 </target>
 </project>

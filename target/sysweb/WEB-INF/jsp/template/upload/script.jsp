@@ -11,8 +11,6 @@
     <script type="text/javascript" src="${path}/html/js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="${path}/html/js/jquery.placeholder.js"></script>
     <script type="text/javascript" src="${path}/html/js/jquery-ui.1.10.4.min.js"></script>
-    <script type="text/javascript" src="${path}/html/components/jquery.uploadify-v3.2.1/jquery.uploadify.js"></script>
-
     
     <!-- Twitter Bootstrap -->
     <script type="text/javascript" src="${path}/html/js/bootstrap.js"></script>
@@ -56,10 +54,11 @@
 	<script type="text/javascript" src="${path}/html/components/sysweb/src/controllers/Menu.js"></script>
 	<!-- upload -->
 	<script type="text/javascript" src="${path}/html/components/sysweb/src/controllers/Upload.js"></script>
+	<script type="text/javascript" src="${path}/html/components/jquery.uploadify-v3.2.1/jquery.uploadify.js"></script>
 	<script type="text/javascript">
-	(function($) {
+	jQuery(function($){
 		$("#arquivos").uploadify({
-				  "swf"       : '${path}/html/components/jquery.uploadify-v3.2.1/uploadify.swf',
+				  'swf'       	   : '${path}/html/components/jquery.uploadify-v3.2.1/uploadify.swf',
 				  'uploader'       : '${path}/${contexto}/${object.id}',
 				  'buttonText'	   : 'Selecionar arquivos',
 				  'folder'         : '${path}/upload',
@@ -67,24 +66,19 @@
 				  'fileTypeExts'   : '${tipoArquivoString}',
 				  'fileSizeLimit'  : '${tamanho}',
 				  'uploadLimit'	   : ${uploadLimit},
-				  'onQueueComplete' : function(queueData) {
+				  'onQueueComplete': function(queueData) {
 			            alert(queueData.uploadsSuccessful + ' arquivos enviados com sucesso!');
-			            location.href = "${path}/${contexto}/${object.id}";
+			            location.href = '${path}/${contexto}/${object.id}';
 			       },
 			       'onUploadError' : function(file, errorCode, errorMsg, errorString) {
 			            alert('O arquivo ' + file.name + ' não pode ser enviado. Erro: ' + errorString);
-			            location.href = "${path}/${contexto}/${object.id}";
+			            location.href = '${path}/${contexto}/${object.id}';
 			       }
 		});
 
-			$("#envio").hide();
-			
-			$("#envio").click(function(){
-				$("#arquivos").uploadify("upload");
-			});
-			$("#adicionarImagem").click(function (){
-				$("#camposImagem").show(1000);
-			});
+		$("#envio").click(function(){
+			$("#arquivos").uploadify("upload");
+		});
 	});
 	</script>
 	
