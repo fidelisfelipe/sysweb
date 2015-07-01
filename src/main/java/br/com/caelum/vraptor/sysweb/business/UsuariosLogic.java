@@ -1,11 +1,11 @@
-package br.com.caelum.vraptor.sysweb.busines;
+package br.com.caelum.vraptor.sysweb.business;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.sysweb.busines.exception.NegocioException;
+import br.com.caelum.vraptor.sysweb.business.exception.NegocioException;
 import br.com.caelum.vraptor.sysweb.dao.impl.DefaultUsuarioDao;
 import br.com.caelum.vraptor.sysweb.model.Usuario;
 import br.com.caelum.vraptor.sysweb.model.UsuarioWeb;

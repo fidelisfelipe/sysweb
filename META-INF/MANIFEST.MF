@@ -5,8 +5,8 @@ Bundle-SymbolicName: sysweb
 Bundle-Version: 1.0.0.qualifier
 Export-Package: br.com.caelum.vraptor.sysweb,
  br.com.caelum.vraptor.sysweb.annotations,
- br.com.caelum.vraptor.sysweb.busines,
- br.com.caelum.vraptor.sysweb.busines.exception,
+ br.com.caelum.vraptor.sysweb.business,
+ br.com.caelum.vraptor.sysweb.business.exception,
  br.com.caelum.vraptor.sysweb.common,
  br.com.caelum.vraptor.sysweb.controller,
  br.com.caelum.vraptor.sysweb.dao,

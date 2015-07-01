@@ -17,7 +17,7 @@ import org.slf4j.impl.Log4jLoggerFactory;
 
 import br.com.caelum.vraptor.observer.upload.UploadedFile;
 import br.com.caelum.vraptor.sysweb.builder.BuilderAnexo;
-import br.com.caelum.vraptor.sysweb.busines.exception.NegocioException;
+import br.com.caelum.vraptor.sysweb.business.exception.NegocioException;
 import br.com.caelum.vraptor.sysweb.model.Anexo;
 
 /**

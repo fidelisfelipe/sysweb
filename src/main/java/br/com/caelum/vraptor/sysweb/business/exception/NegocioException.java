@@ -1,4 +1,4 @@
-package br.com.caelum.vraptor.sysweb.busines.exception;
+package br.com.caelum.vraptor.sysweb.business.exception;
 
 /**
  * @author fidelis.guimaraes
